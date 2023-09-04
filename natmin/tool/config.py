@@ -8,6 +8,7 @@ url_config = {
         'vgg_seq2seq':'vgg-seq2seq.yml',
         'vgg_convseq2seq':'vgg_convseq2seq.yml',
         'vgg_decoderseq2seq':'vgg_decoderseq2seq.yml',
+        'efficient_transformer''efficient_transformer.yml'
         'base':'base.yml',
         }
 
