@@ -5,12 +5,12 @@ from einops import rearrange
 from torchvision.models._utils import IntermediateLayerGetter
 
 class EfficientNet(nn.Module):
-    def __init__(self,name,ss,ks,hidden,pretrain=True,dropout=0.5):
+    def __init__(self,name,ss,ks,hidden,pretrained=True,dropout=0.5):
         super(EfficientNet,self).__init__()
         if name == 'efficientnet_b0':
-            cnn=models.efficientnet_b7(pretrain=pretrain)
+            cnn=models.efficientnet_b7(pretrained=pretrained)
         if name == 'efficientnet_b7':
-            cnn=models.efficientnet_b7(pretrain=pretrain)
+            cnn=models.efficientnet_b7(pretrained=pretrained)
 
         pool_idx=0
         for i,layer in enumerate(cnn.features):
