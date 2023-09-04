@@ -1,8 +1,8 @@
 # for training
-pretrain: ./config/efficientnet.pth
+pretrain: /content/efficientnet_b7.pth
 
 # url or local path (predict)
-weights: ./config/efficientnet.pth
+weights: /content/efficientnet_b7.pth
 
 backbone: efficientnet_b7
 cnn:
