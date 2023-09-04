@@ -2,8 +2,8 @@ import yaml
 from natmin.tool.utils import download_config
 
 url_config = {
-        'vgg_transformer':'vgg-transformer.yml',
-        'efficient_transformer':'efficient_transformer.yml',
+        'vgg-transformer':'vgg-transformer.yml',
+        'efficient-transformer':'efficient-transformer.yml',
         'base':'base.yml',
         }
 
