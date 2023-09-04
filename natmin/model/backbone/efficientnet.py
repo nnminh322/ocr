@@ -37,7 +37,7 @@ class EfficientNet(nn.Module):
 
 
 
-def efficientnet_b0(ss,ks,hidden,pretrain=True,dropout=0.5):
-    return EfficientNet('efficientnet_b0',ss,ks,hidden,pretrain, dropout)
-def efficientnet_b7(ss,ks,hidden,pretrain=True,dropout=0.5):
-    return EfficientNet('efficientnet_b7',ss,ks,hidden,pretrain, dropout)
+def efficientnet_b0(ss,ks,hidden,pretrained=True,dropout=0.5):
+    return EfficientNet('efficientnet_b0',ss,ks,hidden,pretrained, dropout)
+def efficientnet_b7(ss,ks,hidden,pretrained=True,dropout=0.5):
+    return EfficientNet('efficientnet_b7',ss,ks,hidden,pretrained, dropout)
