@@ -1,5 +1,5 @@
-from translate import build_model, translate, translate_beam_search, process_input, predict
-from utils import download_weights
+from natmin.tool.translate import build_model, translate, translate_beam_search, process_input, predict
+from natmin.tool.utils import download_weights
 
 import torch
 from collections import defaultdict
