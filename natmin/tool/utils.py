@@ -35,7 +35,7 @@ def download(url, quiet=False):
 
 
 def download_config(id):
-    url = 'https://vocr.vn/data/vietocr/config/{}'.format(id)
+    url = 'https://raw.githubusercontent.com/nnminh322/ocr/main/config/{}'.format(id)
     r = requests.get(url)
     config = yaml.safe_load(r.text)
     return config
