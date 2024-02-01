@@ -5,13 +5,13 @@ from natmin.model.seqmodel.convseq2seq import ConvSeq2Seq
 from torch import nn
 
 
-class VietOCR(nn.Module):
+class OCR(nn.Module):
     def __init__(self, vocab_size,
                  backbone,
                  cnn_args,
                  transformer_args, seq_modeling='transformer'):
 
-        super(VietOCR, self).__init__()
+        super(OCR, self).__init__()
 
         self.cnn = CNN(backbone, **cnn_args)
         self.seq_modeling = seq_modeling
